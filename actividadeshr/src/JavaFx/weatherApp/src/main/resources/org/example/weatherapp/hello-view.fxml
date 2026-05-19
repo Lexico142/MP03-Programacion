@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.weatherapp.controlador.Controlador"
+      fx:id="rootVBox"
+      prefWidth="400" prefHeight="500"
+      spacing="15" alignment="CENTER">
+
+    <Label text="App del Tiempo" style="-fx-font-size: 24px;"/>
+
+    <HBox spacing="10" alignment="CENTER">
+        <TextField fx:id="textoCiudadField" promptText="Ciudad..."/>
+        <Button text="Buscar" onAction="#controlarBusqueda"/>
+    </HBox>
+
+    <Label fx:id="errorLabel" textFill="red"/>
+
+    <Label fx:id="climaEmojiLabel" style="-fx-font-size: 48px;"/>  <!-- ← añadir -->
+
+    <Label fx:id="nombreCiudadLabel" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+    <Label fx:id="temperaturaLabel" style="-fx-font-size: 16px;"/>
+    <Label fx:id="humedadLabel" style="-fx-font-size: 16px;"/>
+    <Label fx:id="velocidadVientoLabel" style="-fx-font-size: 16px;"/>
+    <Label fx:id="sensacionLabel" style="-fx-font-size: 16px;"/>
+
+</VBox>

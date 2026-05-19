@@ -30,7 +30,6 @@ class GestorBiblioteca {
         } catch (Exception e) {
             System.out.println("Error"); }
     }
-
     public void leerLibros() {
         try {
             Scanner sc = new Scanner(new File(ruta));
@@ -38,7 +37,6 @@ class GestorBiblioteca {
             while (sc.hasNextLine()) {
                 String linea = sc.nextLine();
                 String[] datos = linea.split("\\|");
-
                 if (datos.length == 3) {
                     System.out.println("Título: " + datos[0] + " - Autor: " + datos[1] + " - Año: " + datos[2]);
                 }

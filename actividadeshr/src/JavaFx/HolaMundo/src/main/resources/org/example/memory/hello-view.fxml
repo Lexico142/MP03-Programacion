@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="457.0" prefWidth="631.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.memory.HelloController">
+    <padding>
+        <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+    </padding>
+    <Label fx:id="mensajeLabel" text="">
+        <font>
+            <Font size="24.0" />
+        </font>
+    </Label>
+
+    <Button onAction="#onHelloButtonClick" text="Haz clic aquí">
+        <font>
+            <Font size="16.0" />
+        </font>
+    </Button>
+</VBox>
